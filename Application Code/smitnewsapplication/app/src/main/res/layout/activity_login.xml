@@ -1,125 +1,104 @@
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bk1"
-    android:weightSum="10">
+    android:background="#A6F7FAFC"
+
+    tools:context=".MainActivity">
 
 
-    <ImageView
-        android:layout_width="115dp"
-        android:layout_height="86dp"
-        android:layout_weight="1"
-        android:background="@drawable/logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
 
-    </ImageView>
+    <TextView android:id="@+id/tv1"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="250dp"
+        android:text="Username"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#FF5722"
+        android:background="@drawable/buttonround"
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_weight="2"
-        android:fontFamily=""
-        android:gravity="center"
-        android:text="LOGIN"
-        android:textColor="#ffffff"
-        android:textSize="60sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
 
-    </TextView>
+        />
 
     <EditText
         android:id="@+id/et_1"
-        android:layout_width="398dp"
-        android:layout_height="52dp"
-        android:layout_margin="5dp"
-        android:background="#808080"
-        android:hint="username"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.366">
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
 
-    </EditText>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:layout_marginBottom="446dp"
+        android:hint="USERNAME"
+        android:inputType="text"
+        android:textSize="7sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="310dp"
+        android:text="Password"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#FF5722"
+        android:background="@drawable/buttonround"
+
+        />
+
 
     <EditText
         android:id="@+id/et_2"
-        android:layout_width="399dp"
-        android:layout_height="50dp"
-        android:background="#808080"
-        android:hint="Password"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.459">
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:layout_marginBottom="386dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:textSize="7sp" />
 
-    </EditText>
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="134dp"
-        android:layout_height="48dp"
-        android:layout_margin="5dp"
-        android:text="EDITORIAL"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.148"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.591">
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/buttonround"
+        android:text="login"
 
-    </Button>
+        />
 
     <Button
         android:id="@+id/cancel"
-        android:layout_width="98dp"
-        android:layout_height="58dp"
-        android:background="@drawable/cancel"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771">
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="cancel"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="180dp"
+        android:background="@drawable/buttonround"
 
-    </Button>
+        />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="147dp"
-        android:layout_height="45dp"
-        android:text="STUDENT"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.804"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.591" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn3 = findViewById(R.id.btn3);
         btn4=findViewById(R.id.btn4);
         //btn5=findViewById(R.id.btn5);
-        ecm=findViewById(R.id.ecm       );
+        ecm=findViewById(R.id.ecm );
         gallery1 = findViewById(R.id.gallery1);
-        noa = findViewById(R.id.noa);
+
 
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //  btn5.setOnClickListener(this);
         ecm.setOnClickListener(this);
         gallery1.setOnClickListener(this);
-        noa.setOnClickListener(this);
 
 
     }
@@ -74,9 +73,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if(v==btn4)
         {
-            String value = noa.getText().toString();
+            String value = btn4.getText().toString();
             Toast.makeText(getApplicationContext(),value,Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(getApplicationContext(),webview2.class);
+            Intent intent = new Intent(getApplicationContext(),login.class);
             intent.putExtra("GettingBtnValue",value);
             startActivity(intent);
         }

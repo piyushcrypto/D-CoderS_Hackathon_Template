@@ -17,7 +17,7 @@ public class webview2 extends AppCompatActivity {
 
     private WebView webView;
 
-    private String URL = "https://smu.edu.in/smit";
+    private String URL = "https://google.com";
 
     private String LocalURL = "file:///android_asset/a2.html";
 
@@ -29,7 +29,7 @@ public class webview2 extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_webview);
 
-        webView = findViewById(R.id.webview);
+        webView = findViewById(R.id.webview2);
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.setWebViewClient(new WebViewClient() {
             @SuppressWarnings("deprecation")

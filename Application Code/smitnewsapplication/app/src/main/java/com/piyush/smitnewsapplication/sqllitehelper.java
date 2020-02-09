@@ -2,6 +2,7 @@ package com.piyush.smitnewsapplication;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -22,7 +23,7 @@ public class sqllitehelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + tablename + "(phno text primary key  ,emailid text,name text,pass text)");
+        db.execSQL("create table " + tablename + "(phno text primary key  ,emailid text,name text primary key ,pass text)");
 
     }
 
@@ -45,4 +46,14 @@ public class sqllitehelper extends SQLiteOpenHelper {
         else
             return true;
     }
+   /* public Cursor getalldata(){
+
+        SQLiteDatabase db=this.getWritableDatabase();
+        Cursor res=db.rawQuery("select * from "+tablename,null);
+        return res;
+
+
+    }*/
 }
+
+

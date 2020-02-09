@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ecampus"></activity>
+        <activity android:name=".profileactivity"></activity>
+        <activity android:name=".ecampus" />
         <activity android:name=".webview2" />
         <activity android:name=".webview" />
         <activity android:name=".signup" />

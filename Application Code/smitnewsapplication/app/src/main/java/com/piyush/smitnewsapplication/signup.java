@@ -29,7 +29,7 @@ public class signup extends AppCompatActivity {
         s1password =(EditText) findViewById(R.id.et2);
         email = (EditText) findViewById(R.id.et3);
         mobilenumber1= (EditText)(findViewById(R.id.et4));
-        submitBtn =(Button) findViewById(R.id.submit2);
+        submitBtn =(Button) findViewById(R.id.submitbtn);
         adddata();
 
 
@@ -43,13 +43,18 @@ public class signup extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         if(v==submitBtn){
+                            Intent intent=new Intent(getApplicationContext(),volleyim.class);
+                            Intent intent1=new Intent(getApplicationContext(),MainActivity.class);
                       boolean success= mydb.insertdata(username1.getText().toString(),email.getText().toString(),mobilenumber1.getText().toString(),s1password.getText().toString());
                       if (success==true){
                           Toast.makeText(getApplicationContext()," Successful",Toast.LENGTH_LONG).show();
 
+                          startActivity(intent);
+
                       }
-                      else
+                      else{
                           Toast.makeText(getApplicationContext(),"Un Successful",Toast.LENGTH_LONG).show();
+                            startActivity(intent1);}
                     }}
                 }
         );
