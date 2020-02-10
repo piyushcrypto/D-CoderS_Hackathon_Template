@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#F30"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:background="@drawable/buttonround"
+
+        android:id="@+id/et_1"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:hint="ENTER USERNAME"
+        android:inputType="text"
+        android:maxLength="8"
+        android:textColor="#000000"
+        android:textSize="20dp"></EditText>
+
+    <EditText
+        android:background="@drawable/buttonround"
+
+        android:id="@+id/et_2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:hint="ENTER PASSWORD"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:textColor="#000000"
+        android:textSize="20dp"></EditText>
+    <EditText
+        android:background="@drawable/buttonround"
+
+        android:id="@+id/desig"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:hint="Editorial or Student"
+        android:inputType="text"
+        android:maxLength="10"
+        android:textColor="#000000"
+        android:textSize="20dp"></EditText>
+
+
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonround"
+        android:backgroundTint="#FF5722"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20dp"></Button>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonround"
+
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20dp"></Button>
+    <Button
+        android:id="@+id/signup2"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:background="#00000000"
+        android:text="No Account yet ? Create one"
+        android:textAlignment="center"
+        android:textStyle="italic"
+
+        android:textColor="#fff"
+        android:textSize="20dp"></Button>
+
+
+</LinearLayout>
