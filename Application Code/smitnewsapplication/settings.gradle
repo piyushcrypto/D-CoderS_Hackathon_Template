@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='smitnewsapplication'
+rootProject.name='SmitNews'
