@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.piyush.smitnewsapplication">
-
-    <uses-permission android:name="android.permission.INTERNET" />
+    package="com.piyush.smitnews">
 
     <application
         android:allowBackup="true"
@@ -11,20 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".display"></activity>
-        <activity android:name=".newsedit" />
-        <activity android:name=".profileactivity" />
-        <activity android:name=".ecampus" />
-        <activity android:name=".webview2" />
-        <activity android:name=".webview" />
-        <activity android:name=".signup" />
-        <activity android:name=".login" />
-        <activity android:name=".newsprofile" />
-        <activity android:name=".volleyim" />
         <activity
-            android:name=".ui.login.login"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".MainActivity">
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
